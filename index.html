@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dot Game</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<div class="app-root">
+    <div class="controls">
+        <div class="score">
+            <div>
+            <span>Score: </span><span id="score"></span>
+            </div>
+            <button id="gameBtn">START</button>
+        </div>
+
+        <div class="slider">
+            <input id="speed" type="range" min="10" max="100" value="15"/>
+            <div class="speed-label"><span>Speed: </span><span id="speedLabel"></span></div>
+        </div>
+    </div>
+    <div id="dotContainer"></div>
+</div>
+<script src="/helper.js" defer></script>
+<script src="/index.js" defer></script>
+</body>
+</html>
