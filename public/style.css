@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.app-root {
+  overflow: hidden;
+}
+
+/* Header starts */
+.controls {
+  background-color: #161C22;
+  color: #ffffff;
+  opacity: .9;
+  overflow: hidden;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.score {    
+  font-size: 28px;
+  padding: 20px;
+  text-align: center;
+}
+
+#slider {
+  width: calc(100% - 20px);
+  padding: 10px;
+}
+
+.speed-label {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.slider input {
+  width: 100%;
+  font-size: 14px;
+} 
+/* Header ends */
+
+/* Body starts */
+#dotContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+span.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  opacity: .6;
+  position: absolute;
+  transition: opacity 0.5s ease;  
+}
+
+span.dot:hover {
+  opacity: 1;
+  z-index: 1;
+}
+/* Body ends */
