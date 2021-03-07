@@ -1,9 +1,11 @@
 {
   "name": "shobhitsingh29",
   "version": "0.1.0",
+  "homepage": "http://shobhitsingh29.github.io/glitchGame",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "gh-pages -d src"
   },
   "dependencies": {
     "express": "^4.12.4"
