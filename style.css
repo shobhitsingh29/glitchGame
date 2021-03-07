@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.app-root {
+  overflow: hidden;
+}
+
+/* Header starts */
+.controls {
+  background-color: #161C22;
+  color: #fff;
+  opacity: .7;
+  overflow: hidden;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  padding: 20px;
+  text-align: center;
+}
+
+#slider {
+  width: calc(100% - 20px);
+  padding: 10px;
+}
+
+.speed-label {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.slider input {
+  transition: all 0.5s ease;
+  width: 100%;
+  font-size: 14px;
+}
+/* Header ends */
+
+/* Body starts */
+#dotContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#gameBtn {
+  outline: 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 3px solid #eee;
+  width: 20%;
+  padding: 20px 16px;
+  background-image: linear-gradient(180deg, #f9e086, #f9c300);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  color: #0252d1;
+  font-weight: 800;
+  letter-spacing: 8px;
+  min-width: 280px;
+}
+
+span.dot {
+  transition: all 0.2s ease;
+  will-change: transition;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  opacity: .6;
+  position: absolute;
+}
+
+span.dot:hover {
+  opacity: 1;
+  z-index: 1;
+}
+/* Body ends */
